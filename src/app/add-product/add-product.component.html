@@ -1,0 +1,20 @@
+<!-- Product Index Component -->
+<div class="card">
+  <div class="card-header">
+    {{headerMessage}}
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" id="productIndex"
+               required
+               numbersOnly
+               name="productId"
+               placeholder="Enter Product Index"
+               #postProduct
+               (keyup)="onProductAdd(postProduct)"
+                />
+      </div>
+    </form>
+  </div>
+</div>
